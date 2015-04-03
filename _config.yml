@@ -9,9 +9,9 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               nicholas malacarne
-tagline:             'while (true) doCode();'
-description:         'portfolio.'
+title:               nmalacarne.awake?
+tagline:             'do_code'
+description:         'nicholas malacarne.'
 url:                 http://nmalacarne.me
 baseurl:             /
 paginate:            5

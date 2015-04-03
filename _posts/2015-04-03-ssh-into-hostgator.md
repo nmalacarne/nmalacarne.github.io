@@ -31,19 +31,19 @@ HostGator via a password and run:
 
 This generates a file which contains a list of all valid keys that are allowed access to our server.
 
-The next step is to generate keys locally (if you already have a id\_rsa.pub
-file in your ~/.ssh directory, please skip this step):
+The next step is to generate keys locally (if you already have a *id\_rsa.pub*
+file in your *~/.ssh* directory, please skip this step):
 
 {% highlight bash %}
   $ ssh-keygen -t rsa -C "your.email@your-domain.com"
 {% endhighlight %}
 
-This command will generate a new public key file in your ~/.ssh directory. Next, we need to copy the key from our local
-~/.ssh/id\_rsa.pub file into the ~/.ssh/authorized\_keys file on our remote server. You can use a terminal editor such as
+This command will generate a new public key file in your *~/.ssh directory*. Next, we need to copy the key from our local
+*~/.ssh/id\_rsa.pub* file into the *~/.ssh/authorized\_keys* file on our remote server. You can use a terminal editor such as
 vi/vim, a GUI based editor such as GEdit, or command line utilities such as xclip to accomplish this task.
 
-Once our public key has been added to ~/.ssh/authorized\_keys, we can set up a SSH configuration locally to automate the
-fact that we will be logging in via a public key on port 2222. We do this by creating/editing our local ~/.ssh/config
+Once our public key has been added to *~/.ssh/authorized\_keys*, we can set up a SSH configuration locally to automate the
+fact that we will be logging in via a public key on port 2222. We do this by creating/editing our local *~/.ssh/config*
 file to look like this:
 
 {% highlight bash linenos %}
